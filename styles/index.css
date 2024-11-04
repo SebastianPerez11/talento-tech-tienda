@@ -6,6 +6,7 @@ main {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 64px;
 }
@@ -46,7 +47,7 @@ main {
   gap: 24px;
 }
 
-.links-contain {
+.links-contain a {
   padding: 8px 20px;
   border-radius: 4px;
   font-weight: 500;
@@ -54,7 +55,7 @@ main {
   cursor: pointer;
 }
 
-.links-contain:hover {
+.links-contain a:hover {
   transition: background 0.4s;
   background: rgb(223, 16, 16);
 }
@@ -84,7 +85,9 @@ main {
 /* Products-Section */
 
 .section-products {
+  width: 100%;
   padding: 20px 26px;
+  max-width: 1820px;
 }
 
 .container-products {
@@ -171,6 +174,8 @@ main {
 
 .section-reseñas {
   padding: 20px 26px;
+  width: 100%;
+  max-width: 1820px;
 }
 
 .container-reseñas {
@@ -192,28 +197,110 @@ main {
   background: #131312;
 }
 
-.reseñas-paragraph{
+.reseñas-paragraph {
   font-size: 18px;
   color: white;
   margin-bottom: 24px;
 }
 
-.footer-reseñas{
+.footer-reseñas {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.circle-user{
+.circle-user {
   width: 44px;
   height: 44px;
 }
 
-.name-user{
+.name-user {
   font-size: 18px;
   color: #fff;
 }
 
+/* Contacto-Section */
+
+.section-contacto {
+  padding: 20px 26px;
+  width: 100%;
+  max-width: 1820px;
+}
+.header-contacto {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 24px;
+}
+
+.info-contacto{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.text-contacto{
+  font-size: 20px;
+  color: rgb(248, 24, 24);
+}
+
+.paragraph-contacto{
+  font-size: 18px;
+  color: white;
+}
+
+.info-contacto span{
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+}
+
+.form-container {
+  width: 100%;
+  height: max-content;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+}
+
+.label-contacto {
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px; 
+  margin-bottom: 18px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.input-contacto {
+  display: flex;
+  font-size: 16px;
+  width: 100%;
+  padding: 2.5px;
+  border-radius: 4px;
+}
+
+.btn-formulario{
+  background-color: red;
+  border: none;
+  padding: 8px 12px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600; 
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 4px;
+
+}
+
+.iframe {
+  margin-top: 42px;
+  border-radius: 4px;
+}
 /* General Styles */
 
 .first-title {
