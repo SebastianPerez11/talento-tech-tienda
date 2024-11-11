@@ -10,17 +10,23 @@ main {
   flex-direction: column;
   gap: 64px;
 }
+
+.video-section {
+  width: 100%;
+  display: flex;
+}
 /* Navbar */
 
 .nav-logo {
-  width: 44px;
-  height: 44px;
+  width: 100px;
 }
 .header {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #131312;
+  background-color: transparent;
+  position: fixed; 
+  z-index: 20;
 }
 .header-nav {
   max-width: 1820px;
@@ -30,15 +36,28 @@ main {
   justify-content: space-between;
 }
 
+
 .container-links {
   display: flex;
   align-items: center;
   gap: 72px;
 }
 
+@media (width < 400px) {
+  .container-links {
+    gap: 0px;
+  }
+}
+
 .header-links {
   display: flex;
   align-items: center;
+}
+
+@media (width < 400px) {
+  .header-links{
+    display: none;
+  }
 }
 
 .header-links-icons {
@@ -73,15 +92,22 @@ main {
 
 /* Hero-Section */
 
-.section {
+.section-setup {
+  padding: 20px 26px;
   width: 100%;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
+  max-width: 1820px;
   display: flex;
-  background-image: url(../assets/img/setup-redragon.jpg);
+  flex-direction: column;
 }
 
+.section-setup-img {
+  padding: 20px 26px;
+  width: 100%;
+  height: 80vh;
+  background-image: url(/assets/img/setup-redragon.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 /* Products-Section */
 
 .section-products {
@@ -93,7 +119,7 @@ main {
 .container-products {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .card-product {
@@ -135,7 +161,7 @@ main {
 }
 
 .img-product {
-  width: 480px;
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
@@ -160,7 +186,7 @@ main {
   width: 100%;
   display: grid;
   padding: 20px 26px;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .about-paragraph {
@@ -178,11 +204,27 @@ main {
   max-width: 1820px;
 }
 
+@media (width < 400px) {
+  .section-reseñas {
+    padding: 20px 12px;
+  }
+}
+
 .container-reseñas {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 24px;
+}
+
+
+@media (width < 400px) {
+  .container-reseñas {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+  }
 }
 
 .card-reseña {
@@ -243,7 +285,7 @@ main {
 
 .text-contacto{
   font-size: 20px;
-  color: rgb(248, 24, 24);
+  color: rgb(245, 51, 51);
 }
 
 .paragraph-contacto{
@@ -255,6 +297,28 @@ main {
   font-size: 18px;
   color: white;
   font-weight: 600;
+}
+
+.container-redes{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header-redes{
+  flex-grow: 1;
+}
+
+.header-redes-title{
+  font-size: 18.5px;
+  color: rgb(245, 51, 51);
+  font-weight: 600;
+}
+
+.footer-redes{
+  display: flex;
+  gap: 6.5px;
 }
 
 .form-container {
@@ -289,7 +353,7 @@ main {
   border: none;
   padding: 8px 12px;
   color: white;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600; 
   text-transform: uppercase;
   cursor: pointer;
@@ -298,7 +362,7 @@ main {
 }
 
 .iframe {
-  margin-top: 42px;
+  margin-top: 64px;
   border-radius: 4px;
 }
 /* General Styles */
