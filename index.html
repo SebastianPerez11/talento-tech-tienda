@@ -13,14 +13,14 @@
         <picture class="nav-container-logo">
           <img
             class="nav-logo"
-            src="/assets/svg/logo-redragon.svg"
-            alt="Logo Redragon"
+            src="/assets/svg/logo-marca.svg"
+            alt="Logo Ropa"
           />
         </picture>
         <header class="container-links">
           <ul class="header-links">
             <li class="links-contain">
-              <a href="">Inicio</a>
+              <a href="/">Inicio</a>
             </li>
             <li class="links-contain">
               <a href="#productos">Productos</a>
@@ -34,7 +34,7 @@
           </ul>
 
           <ul class="header-links-icons">
-            <a href="/" class="links-icon">
+            <a href="carrito.html" class="links-icon">
               <img class="link-icon" src="assets/svg/icon-bag.svg" alt="" />
             </a>
 
@@ -47,114 +47,13 @@
     </header>
 
     <main>
-      <video class="video-section" autoplay muted loop>
-        <source src="/assets/videos/videoplayback.mp4" type="video/mp4" />
-        Tu navegador no soporta el video.
-      </video>
+      <section class="video-section">
+        <img class="hero-image" src="/assets/img/bgNew.jpg" alt="" />
+      </section>
 
       <section id="productos" class="section-products">
         <h2 class="first-title">PRODUCTOS</h2>
-        <div class="container-products">
-          <a href="/">
-            <article class="card-product">
-              <header class="container-img-product">
-                <img
-                  class="img-product"
-                  src="assets/img/teclado-draboborn.png"
-                  alt=""
-                />
-              </header>
-              <footer>
-                <span class="category-product">TECLADOS</span>
-                <h2 class="name-product">DRAGOBORN K630</h2>
-              </footer>
-            </article></a
-          >
-
-          <a href="/">
-            <article class="card-product">
-              <header class="container-img-product">
-                <img
-                  class="img-product"
-                  src="assets/img/monitor-esmerald.png"
-                  alt=""
-                />
-              </header>
-              <footer>
-                <span class="category-product">PANTALLAS</span>
-                <h2 class="name-product">ESMERALD GM270F165</h2>
-              </footer>
-            </article></a
-          >
-
-          <a href="/">
-            <article class="card-product">
-              <header class="container-img-product">
-                <img
-                  class="img-product"
-                  src="assets/img/mouse-storm-elite-white.png"
-                  alt=""
-                />
-              </header>
-              <footer>
-                <span class="category-product">MOUSES</span>
-                <h2 class="name-product">STORM ELITE WHITE M988W</h2>
-              </footer>
-            </article></a
-          >
-        </div>
-        <div class="container-products">
-          <a href="">
-            <article class="card-product">
-              <header class="container-img-product">
-                <img
-                  class="img-product"
-                  src="assets/img/auriculares-zeus-x.png"
-                  alt=""
-                />
-              </header>
-              <footer>
-                <span class="category-product">AUDIO</span>
-                <h2 class="name-product">ZEUS X H510</h2>
-              </footer>
-            </article>
-          </a>
-
-          <a href="/">
-            <article class="card-product">
-              <header class="container-img-product">
-                <img
-                  class="img-product"
-                  src="assets/img/refrigeracion-effect-ccw300.png"
-                  alt=""
-                />
-              </header>
-              <footer>
-                <span class="category-product">REFRIGERACIÓN</span>
-                <h2 class="name-product">EFFECT X CPU COOLER CCW300</h2>
-              </footer>
-            </article>
-          </a>
-
-          <a href="">
-            <article class="card-product">
-              <header class="container-img-product">
-                <img
-                  class="img-product"
-                  src="assets/img/gabinete-wheeljack-b-c.png"
-                  alt=""
-                />
-              </header>
-              <footer>
-                <span class="category-product">GABINETES</span>
-                <h2 class="name-product">WHEELJACK GC606</h2>
-              </footer>
-            </article>
-          </a>
-        </div>
-        <section class="container-btn">
-          <a class="more-products" href="/">VER MAS PRODUCTOS</a>
-        </section>
+        <div id="containerProducts" class="container-products"></div>
       </section>
 
       <section id="reseñas" class="section-reseñas">
@@ -260,7 +159,7 @@
       </section>
 
       <section class="section-setup">
-        <h2 class="first-title">CREA TU PROPIO SETUP</h2>
+        <h2 class="first-title">VESTITE CON EL MEJOR ESTILO</h2>
         <header class="section-setup-img"></header>
       </section>
 
@@ -270,9 +169,10 @@
           <div class="info-contacto">
             <h3 class="text-contacto">Obten una experiencia personalizada</h3>
             <p class="paragraph-contacto">
-              Si tienes preguntas sobre nuestros productos o necesitas más
-              información antes de realizar tu compra, no dudes en ponerte en
-              contacto con nosotros.
+              Si tienes preguntas sobre nuestras prendas o necesitas más
+              información antes de completar tu compra, no dudes en ponerte en
+              contacto con nosotros. Completa el formulario a continuación y
+              nuestro equipo estará encantado de asistirte.
             </p>
 
             <p class="paragraph-contacto">
@@ -307,7 +207,11 @@
               </footer>
             </div>
           </div>
-          <form class="form-container" action="https://formspree.io/f/mvgorkql" method="POST">
+          <form
+            class="form-container"
+            action="https://formspree.io/f/mvgorkql"
+            method="POST"
+          >
             <label class="label-contacto" for="nombre">
               Nombre:
               <input
@@ -337,7 +241,12 @@
             </label>
             <label class="label-contacto" for="">
               Mensaje:
-              <input class="input-contacto" type="text" name="mensaje" id="mensaje" />
+              <input
+                class="input-contacto"
+                type="text"
+                name="mensaje"
+                id="mensaje"
+              />
             </label>
             <input class="btn-formulario" type="submit" value="Enviar" />
           </form>
@@ -356,32 +265,7 @@
     </main>
 
     <footer></footer>
+
+    <script src="index.js"></script>
   </body>
 </html>
-
-<!-- 
-      <section class="section-about">
-        <header class="container-about">
-          <h2 class="first-title">SOBRE NOSOTROS</h2>
-
-          <p class="about-paragraph">
-            Bienvenido a Iconic, te ofrecemos una selección premium de productos
-            que incluyen teclados, ratones, auriculares y más, todos diseñados
-            para mejorar tu experiencia de juego y productividad.
-          </p>
-
-          <p class="about-paragraph">
-            Nuestro objetivo es proporcionar a gamers y entusiastas de la
-            tecnología las herramientas perfectas para llevar su rendimiento al
-            siguiente nivel.
-          </p>
-
-          <p class="about-paragraph">
-            Con el respaldo de un equipo de expertos listos para asesorarte, te
-            invitamos a explorar nuestra variedad y descubrir cómo podemos
-            transformar tu setup. ¡Potencia tu experiencia informática con
-            nosotros!
-          </p>
-        </header>
-        <footer></footer>
-      </section> -->
